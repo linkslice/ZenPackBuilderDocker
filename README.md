@@ -8,7 +8,7 @@ Framework for using the CustomScriptBuilder[1] repo in a Docker container where 
 # cd /tmp/
 # mkdir libexec
 # <move your scripts into libexec>
-# docker run -v $(pwd):/mnt/pwd -it customscriptbuilder /bin/sh /makepack.sh -a "Your Name" -n CompanyName -v <version>
+# docker run -v $(pwd):/mnt/pwd -it customscriptbuilder /bin/sh /CustomScriptBuilder/makepack.sh -a "Your Name" -n CompanyName -v <version>
 ```
 You should end up with an egg in `/tmp/`
 
