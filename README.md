@@ -20,7 +20,7 @@ From Docker Hub:
 # docker pull linkslice/customscriptbuilder:v1
 # mkdir libexec
 # <move your scripts into libexec>
-# docker run -v $(pwd):/mnt/pwd -it customscriptbuilder /bin/sh /CustomScriptBuilder/makepack.sh -a "Your Name" -n CompanyName -v <version>
+# docker run -v $(pwd):/mnt/pwd -it linkslice/customscriptbuilder:v1 /bin/sh /CustomScriptBuilder/makepack.sh -a "Your Name" -n CompanyName -v <version>
 ```
 
 
