@@ -22,6 +22,6 @@ From Docker Hub:
 # <move your scripts into libexec>
 # docker run -v $(pwd):/mnt/pwd -it linkslice/customscriptbuilder:v1 /bin/sh /CustomScriptBuilder/makepack.sh -a "Your Name" -n CompanyName -v <version>
 ```
-
+** Add `-p` to install Nagios Plugins into your container and add to to egg automatically.
 
 [1] https://github.com/linkslice/CustomScriptBuilder
