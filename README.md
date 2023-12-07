@@ -17,10 +17,10 @@ You should end up with an egg in `/tmp/`
 
 From Docker Hub:
 ```
-# docker pull linkslice/customscriptbuilder:v1
+# docker pull linkslice/customscriptbuilder:latest
 # mkdir libexec
 # <move your scripts into libexec>
-# docker run -v $(pwd):/mnt/pwd -it linkslice/customscriptbuilder:v1 /bin/sh /CustomScriptBuilder/makepack.sh -a "Your Name" -n CompanyName -v <version>
+# docker run -v $(pwd):/mnt/pwd -it linkslice/customscriptbuilder:latest /bin/sh /CustomScriptBuilder/makepack.sh -a "Your Name" -n CompanyName -v <version>
 ```
 ** Add `-p` to install Nagios Plugins into your container and add to to egg automatically.
 
