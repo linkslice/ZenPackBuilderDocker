@@ -26,4 +26,7 @@ From Docker Hub:
 
 ** Add `-p` to install Nagios Plugins into your container and add to to egg automatically.
 
+If you're feeling adventurous, there's an experimental webapp you can host in docker or control center found here: https://github.com/linkslice/ZenPackLab
+
+
 [1] https://github.com/linkslice/CustomScriptBuilder
