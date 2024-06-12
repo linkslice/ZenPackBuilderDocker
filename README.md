@@ -16,8 +16,9 @@ From scratch:
 You should end up with an egg in `/tmp/`
 
 From Docker Hub:
+There 2 images depending on the version of Zenoss that you're running. Use the `centos` tag if you're on 6.7 or earlier and `ubuntu` if later, or cloud.
 ```
-# docker pull linkslice/customscriptbuilder:latest
+# docker pull linkslice/customscriptbuilder:<tag>
 # mkdir libexec
 # <move your scripts into libexec>
 # docker run -v $(pwd):/mnt/pwd -it linkslice/customscriptbuilder:latest /bin/sh /CustomScriptBuilder/makepack.sh -a "Your Name" -n CompanyName -v <version>
