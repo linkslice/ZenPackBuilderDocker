@@ -11,7 +11,7 @@ From scratch:
 # cd /tmp/
 # mkdir libexec
 # <move your scripts into libexec>
-# docker run -v $(pwd):/mnt/pwd -it customscriptbuilder /bin/sh /CustomScriptBuilder/makepack.sh -a "Your Name" -n CompanyName -v <version>
+# docker run -v $(pwd):/mnt/pwd -it customscriptbuilder /bin/bash /CustomScriptBuilder/makepack.sh -a "Your Name" -n CompanyName -v <version>
 ```
 You should end up with an egg in `/tmp/`
 
@@ -21,7 +21,7 @@ There 2 images depending on the version of Zenoss that you're running. Use the `
 # docker pull linkslice/customscriptbuilder:<tag>
 # mkdir libexec
 # <move your scripts into libexec>
-# docker run -v $(pwd):/mnt/pwd -it linkslice/customscriptbuilder:latest /bin/sh /CustomScriptBuilder/makepack.sh -a "Your Name" -n CompanyName -v <version>
+# docker run -v $(pwd):/mnt/pwd -it linkslice/customscriptbuilder:latest /bin/bash /CustomScriptBuilder/makepack.sh -a "Your Name" -n CompanyName -v <version>
 ```
 ** If you're not adding custom script but just trying to get the Nagios plugins installed you can skip the steps of making a libexec directory
 
