@@ -27,6 +27,11 @@ There 2 images depending on the version of Zenoss that you're running. Use the `
 
 ** Add `-p` to install Nagios Plugins into your container and add to to egg automatically.
 
+If using docker desktop under windows the `docker run` command might look more like:
+```
+# docker run -v $PWD/:/mnt/pwd -it linkslice/customscriptbuilder:latest /bin/bash /CustomScriptBuilder/makepack.sh -a "Your Name" -n CompanyName -v <version>
+```
+
 If you're feeling adventurous, there's an experimental webapp you can host in docker or control center found here: https://github.com/linkslice/ZenPackLab
 
 
